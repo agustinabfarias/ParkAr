@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Garet-Book", sans-serif;
+    src: url("../tipografias/Garet-Book.ttf");
+}
+@font-face {
+    font-family: "Garet-Heavy", sans-serif;
+    src: url("..//tipografias/Garet-Heavy.ttf");
+}
+
+#avatar{
+    border-radius: 50%;
+    box-shadow: 0 4px 2px hsl(0 0% 0% / 20%), 0 4px 2px hsl(0 0% 0% / 20%) inset;
+}
+
+/* -----------------NAVBAR-------------------- */
+
+.navbar{
+    background-color:rgb(140, 139, 139);
+    height: 70px;
+    border-bottom: 5px solid hsl(200, 1%, 46%);
+    width: 100%;
+    
+}
+.navbar li{
+    height: 100%;
+}
+
+.navbar ul{
+    height: 100%;
+}
+
+.navbar button{
+    background-color:rgb(140, 139, 139);
+    height: 100%;
+    width: 150%;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar button :hover{
+    background-color: rgb(47, 46, 46);
+    font-weight: bold;
+    color:rgb(140, 139, 139);
+    width: 100%;
+
+}
+
+/* menu */
+.menu{
+    font-family: "Garet-Book", sans-serif;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.menu li{
+    margin-right: 20px;
+
+}
+
+.menu li button{
+    /* background-color: #453AB6; */
+    height: 100%;
+    width: 150%;
+    border: none;
+    text-decoration: none;
+    
+    
+}
+.menu li button a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgb(47, 46, 46);
+}
+.menu:hoover{
+    cursor: pointer;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(47, 46, 46);
+}
+
+
+/* -----------------MATERIAS---------------- */
+
+.materias-titulo{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+
+.materias-listado{
+    display: flex;
+    left: calc(50% - 330px);
+}    
+
+.materias{
+    position: relative;
+    width: 110;
+    height: 290px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+     transition: 0s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Garet-Book", sans-serif;
+    text-align: justify;
+    margin-left: 10%;
+  
+}
+.materias li{
+    margin-left: 3%;
+}
+.materias h5{
+    font-size: 20px;
+}
+
+.materias:nth-child(1){
+    background-color:hsl(200, 1%, 46%);
+}
+
+.materias:nth-child(2){
+    background-color: hsl(200, 1%, 46%);
+}
+.materias:nth-child(3){
+    background-color: hsl(200, 1%, 46%);
+}
+.materias:nth-child(4){
+    background-color: hsl(200, 1%, 46%);
+}
+
+.materias:not(:first-child){
+    margin-left: -55px;
+}
+
+.materias:hover{
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.materias:hover ~ .materias{
+    left: 55px;
+}
+
+/* -----------integrantes--------------- */
+
+.alumnos{
+    font-family: "Garet-Book", sans-serif;
+    font-size: 24px;
+    /* width: 100px; */
+    /* background-color: rgb(88, 88, 88); */
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin-left: 650px; */
+    
+}
+
+#titulo-grupo{
+    text-align: center;
+    font-size: 40px;
+    padding: 3%;
+}
+
+.alumnos li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alumnos img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid .2em hsl(200, 1%, 46%);
+    box-shadow: 0 4px 2px hsl(0 0% 0% / 20%), 0 4px 2px hsl(0 0% 0% / 20%) inset;
+
+}
+
+.alumnos li{
+    margin-right: 30px;
+    padding: 0.5em;
+}
+.alumnos li a{
+    text-decoration: none;
+    color: rgb(181, 175, 175);
+    margin-top: 10%;
+}
+
+.alumnos a:hover{
+    color: white;
+    
+}
+footer{
+    background-color:rgb(140, 139, 139);
+    text-align: center;
+    border-top: 5px solid hsl(200, 1%, 46%);
+}
+
+footer p{
+    color: white;
+    padding: 2%;
+}
+
+
+
+.info h2{
+    font-size: 30px;
+    margin-bottom: -2%;
+    color: aliceblue;
+}
+.info h3{
+    font-size: 25px;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+ header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+}
+
+header #avatar{
+    margin-left: -170px;
+}
+
+/* section */
+
+/* 
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section{
+    flex-basis: calc(100% / 2)
+}
+
+.materias{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 2)
+    
+}
+
+ */ 
+
+
+/* texto */
+
+h1{
+    font-family: "Garet-Heavy", sans-serif;
+    font-size: 55px;
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+}
+
+h2{
+    font-family: "Garet-Heavy", sans-serif;
+    font-size: 45px;
+    color: rgb(140, 139, 139);
+    text-align: center;
+}
+
+h3{
+    font-family: "Garet-Heavy", sans-serif;
+    font-size: 20px;
+    color: rgb(140, 139, 139);
+}
+
+p{
+    font-family: "Garet-Book", sans-serif;
+    font-size: 20px;
+    color: rgb(181, 175, 175);
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* menu alumnos  */
+
+
+.menu:hoover{
+    cursor: pointer;
+}

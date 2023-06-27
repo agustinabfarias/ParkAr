@@ -17,12 +17,12 @@
     src: url("..//tipografias/SF-Pro-Display-Bold.ttf");
 }
 
-.navbar{
+/* .navbar{
     background-color:#9085F5;
     height: 70px;
     border-bottom: 5px solid #453AB6;
     width: 100%;
-    
+
 }
 .navbar li{
     height: 100%;
@@ -43,7 +43,41 @@
     width: 150%;
     border: none;
     font-weight: bold;
-}
+} */
+
+.navbar {
+    background-color: #9085F5;
+    height: 70px;
+    border-bottom: 5px solid #453AB6;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+  }
+  
 
 .navbar button :hover{
     background-color:white;
@@ -52,12 +86,14 @@
     width: 100%;
 }
 
+
+
 header{
-    
+
     /* height: 270px; */
     display: flex;
     margin: none;
-    
+
 }
 
 header img{
@@ -65,6 +101,7 @@ header img{
     width: 100%;
     height: 120%;
 }
+
 /* menu */
     .menu{
         font-family: "SF-Pro-Display";
@@ -72,7 +109,7 @@ header img{
         list-style: none;
         align-items: center;
         justify-content: space-evenly;
-       
+
     }
 
     .menu li{
@@ -86,8 +123,8 @@ header img{
         width: 150%;
         border: none;
         text-decoration: none;
-        
-        
+
+
     }
     .menu li button a{
         text-decoration: none;
@@ -108,6 +145,7 @@ header img{
 body{
     background-color:  #E9E7FF;
 }
+
 
 /* header */
 
@@ -131,21 +169,21 @@ header #avatar{
 
 h1{
     font-family: "SF Pro Display";
-    
+
     color:#9085F5;
     font-weight: bold;
 }
 
 h2{
     font-family: "SF-Pro-Display", sans-serif;;
-    
+
     color: #453AB6;
     text-align: center;
 }
 
 h3{
     font-family: "SF-Pro-Display", sans-serif;
-    
+
     color:  #9085F5;
 }
 
@@ -204,17 +242,17 @@ p{
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    
+
 }
 .integrantes:not(:first-child){
     margin-left: -55px;
 }
 .integrantes a{
     text-decoration: none;
-    display: -webkit-box;  
-    -webkit-line-clamp: 3; 
-    -webkit-box-orient: vertical; 
-    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .integrantes img{
@@ -226,7 +264,7 @@ p{
 .integrantes:hover{
     transform: translateY(-20px);
     z-index: 1;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .integrantes .nombre-link {
@@ -250,7 +288,7 @@ p{
     margin-left: 20%;
     color: beige;
     margin-top: 5%;
-    
+
 }
 
 .rotulo:hover{
@@ -261,7 +299,7 @@ p{
 
 .integrantes:hover ~ .alumnos{
     left: 55px;
-} 
+}
 
 .menu:hover{
     cursor: pointer;
@@ -329,7 +367,69 @@ footer p{
     font-size: 30px;
 }
 
+/* ------RESPONSIVE */
 
+/* NAVBAR */
+@media (max-width: 460px) {
+    .navbar {
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    .navbar li {
+      margin: 1px;
+      
+    }
+    
+    .navbar li button {
+      padding: 1px;
+      font-size: 14px;
+      width: 95%;
+      height: 60%;
+    }
+    .alumnos{
+        display: grid;
+       }   
+    .alumnos h3{
+        text-align: center;
+        font-size: 20px;
+    }
+    /* .alumnos ul{
+        margin-left: 6%;
+        
+    } */
+    .integrantes{
+        width: 80px;
+        height: 100px;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2%;
+    }
 
+    .integrantes img{
+    border-radius: 15%;
+    padding: 2px;
+    margin-left: 15%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}   
+    .rotulo{
+    background-color:#453AB6;
+    width: 45px;
+    text-align: center;
+    margin-left: 20%;
+    color: beige;
+    margin-top: 3%;
+}
+    .nombre-link{
+    text-align: center;
+    }
 
-
+    .nombre-link-sofi{
+        font-size: 9.5px;
+        text-align: center;
+    }
+  }

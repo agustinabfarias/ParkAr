@@ -405,7 +405,7 @@ footer p{
         font-size: 12px;
         align-items: center;
         justify-content: center;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     .integrantes img{

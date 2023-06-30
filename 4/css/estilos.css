@@ -10,6 +10,7 @@
 #avatar{
     border-radius: 50%;
     box-shadow: 0 4px 2px hsl(0 0% 0% / 20%), 0 4px 2px hsl(0 0% 0% / 20%) inset;
+    
 }
 
 /* -----------------NAVBAR-------------------- */
@@ -313,4 +314,61 @@ p{
 
 .menu:hoover{
     cursor: pointer;
+}
+
+@media (max-width: 460px) {
+
+    .titulo h1{
+        font-size: 26px;
+    }
+
+    .titulo h2{
+        font-size: 22px;
+    }
+    #avatar{
+        width: 50%;
+        height: 50%;
+        justify-self: center;
+    }
+
+    .navbar {
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    .navbar li {
+      margin: 1px;
+
+    }
+
+    .navbar li button {
+      padding: 1px;
+      font-size: 14px;
+      width: 95%;
+      height: 60%;
+    }
+    
+    .info h2{
+        font-size: 18px ;
+    }
+    .info h3{
+        font-size: 16px;
+    }
+
+    .info p .cuatri{
+        font-size: 14px;
+    }
+
+    .info h4{
+        font-size: 14px;
+    }
+
+    .info p{
+        font-size: 12px;
+    }
+    
+    footer p{
+        font-size: 10px;
+    }
 }
